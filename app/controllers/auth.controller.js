@@ -2,8 +2,6 @@ const db = require('../models');
 const config = require('../config/auth.config.js');
 const User = db.user;
 
-const Op = db.Sequelize.Op;
-
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
@@ -20,7 +18,6 @@ exports.signUp = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-
 
 exports.signIn = async (req, res) => {
   try {

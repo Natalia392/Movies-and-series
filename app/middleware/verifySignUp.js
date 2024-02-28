@@ -18,4 +18,4 @@ const checkduplicateUser = (req, res, next) => {
   });
 };
 
-module.export = checkduplicateUser;
+module.exports = checkduplicateUser;

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const cors = require("cors");
 
@@ -29,6 +31,9 @@ db.sequelize.sync({force: true}).then(() => {
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to movies and series application" });
 });
+
+// routes
+require('./app/routes/auth.routes')(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

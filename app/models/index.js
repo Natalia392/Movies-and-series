@@ -24,7 +24,12 @@ db.sequelize = sequelize;
 
 // En principio no planeo poner roles, pero prefiero dejar el código por si fuera necesario más adelante
 db.user = require("../models/user.model.js")(sequelize, Sequelize);
+db.FavoriteMovie = require("../models/favMovie.model.js")(sequelize, Sequelize);
 // db.role = require("../models/role.model.js")(sequelize, Sequelize);
+
+// Definir relaciones entre los modelos
+db.user.hasMany(db.FavoriteMovie);
+db.FavoriteMovie.belongsTo(db.user);
 
 // db.role.belongsToMany(db.user, {
 //   through: "user_roles"

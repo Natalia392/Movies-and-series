@@ -10,7 +10,7 @@ Se utilizó la api de [The Movie db](https://developer.themoviedb.org/docs/getti
 
 Por otro lado, para la autenticación de usuarios, se creó un backend con node.js, express, postgre SQL y Sequelize.
 
-El link al repositorio del frontend se puede encontrar [Aquí](https://github.com/Natalia392/Movies-and-series).](https://github.com/Natalia392/Movies-and-series-front/).
+El link al repositorio del frontend se puede encontrar [Aquí](https://github.com/Natalia392/Movies-and-series).
 
 Para probar la aplicación, hay que seguir los siguientes pasos:
 - Instalar PostreSQL. Aquí hay una guía para instalarla en Windows, que viene con links para instalarla en mac o Linux: [Instalar PostgreSQL](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/)
